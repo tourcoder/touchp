@@ -78,11 +78,17 @@ install_binary() {
         chmod +x "$BINARY"
     fi
 
-    # Check if install directory is writable
+    # Check if /usr/local/bin exists, if not, create it
+    if [ ! -d "$INSTALL_DIR" ]; then
+        echo "Directory $INSTALL_DIR does not exist. Creating it now..."
+        sudo mkdir -p "$INSTALL_DIR"
+        sudo chown $(whoami) "$INSTALL_DIR"  # Change ownership to the current user
+    fi
+
+    # Check if /usr/local/bin is writable
     if [ ! -w "$INSTALL_DIR" ]; then
-        echo "Warning: $INSTALL_DIR is not writable. Installing to ~/bin instead."
-        INSTALL_DIR="$HOME/bin"
-        mkdir -p "$INSTALL_DIR"
+        echo -e "${RED}Error: $INSTALL_DIR is not writable. Please check permissions.${NC}"
+        exit 1
     fi
 
     # Move binary to install directory
@@ -90,7 +96,7 @@ install_binary() {
         echo "Windows detected. Please manually move $BINARY to a directory in your PATH."
         echo "File downloaded to: $TEMP_DIR/$BINARY"
     else
-        mv "$BINARY" "$INSTALL_DIR/touchp"
+        sudo mv "$BINARY" "$INSTALL_DIR/touchp"
         echo -e "${GREEN}Successfully installed touchp to $INSTALL_DIR/touchp${NC}"
         echo "You can now run 'touchp --help' to get started."
     fi
