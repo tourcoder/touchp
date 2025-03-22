@@ -29,12 +29,6 @@ Run the following command in your terminal to download and execute the
 curl -fsSL https://raw.githubusercontent.com/huabin/touchp/refs/heads/master/install.sh | sh
 ```
 
-or
-
-```
-curl -fsSL https://installscript.binhua.org/touchp/install.sh | sh
-```
-
 #### What the Script Does
 
 1. Detects Your System: Identifies your OS (macOS, Linux, Windows) and architecture (amd64, arm64).
