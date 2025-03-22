@@ -36,7 +36,7 @@ curl -fsSL https://raw.githubusercontent.com/huabin/touchp/refs/heads/master/ins
 2. Downloads the Binary: Fetches the correct precompiled binary from `https://dlc.binhua.org/touchp/` (e.g., touchp-macos-arm64-v1.0.0).
 
 3. Installs the Binary:
- - On macOS/Linux: Places `touchp` in `/usr/local/bin` (or `~/bin` if permissions are insufficient).
+ - On macOS/Linux: Places `touchp` in `/usr/local/bin`.
  - On Windows: Downloads the `.exe` file to a temporary directory and prompts you to move it manually to a directory in your PATH.
 
 4. Cleans Up: Removes temporary files after installation.
