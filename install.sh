@@ -2,12 +2,12 @@
 
 # install.sh - Installation script for touchp
 # This script detects the OS and architecture, then downloads and installs the appropriate touchp binary.
-# Touchp - https://binhua.org/touchp
+# Touchp - https://github.com/tourcoder/touchp
 
 set -e  # Exit on error
 
 # Base URL for downloading binaries
-BASE_URL="https://dlc.binhua.org/touchp"
+BASE_URL="https://touchp.tourcoder.com"
 VERSION="v1.0.0"
 INSTALL_DIR="/usr/local/bin"  # default
 TEMP_DIR="/tmp/touchp-install"
