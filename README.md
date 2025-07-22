@@ -26,14 +26,14 @@ You can install `touchp` using the provided installation script, which automatic
 Run the following command in your terminal to download and execute the 
 
 ```
-curl -fsSL https://raw.githubusercontent.com/huabin/touchp/refs/heads/master/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/tourcoder/touchp/refs/heads/master/install.sh | sh
 ```
 
 #### What the Script Does
 
 1. Detects Your System: Identifies your OS (macOS, Linux, Windows) and architecture (amd64, arm64).
 
-2. Downloads the Binary: Fetches the correct precompiled binary from `https://dlc.binhua.org/touchp/` (e.g., touchp-macos-arm64-v1.0.0).
+2. Downloads the Binary: Fetches the correct precompiled binary from `https://touchp.tourcoder.com/` (e.g., touchp-macos-arm64-v1.0.0).
 
 3. Installs the Binary:
  - On macOS/Linux: Places `touchp` in `/usr/local/bin`.
@@ -48,7 +48,7 @@ curl -fsSL https://raw.githubusercontent.com/huabin/touchp/refs/heads/master/ins
 	```
 	Starting touchp installation...
 	Detected system: macos-arm64
-	Downloading touchp-macos-arm64-v1.0.0 from https://dlc.binhua.org/touchp/touchp-macos-arm64-v1.0.0...
+	Downloading touchp-macos-arm64-v1.0.0 from https://touchp.tourcoder.com/touchp-macos-arm64-v1.0.0...
 	Successfully installed touchp to /usr/local/bin/touchp
 	You can now run 'touchp --help' to get started.
 	```
@@ -58,7 +58,7 @@ curl -fsSL https://raw.githubusercontent.com/huabin/touchp/refs/heads/master/ins
 	```
 	Starting touchp installation...
 	Detected system: linux-amd64
-	Downloading touchp-linux-amd64-v1.0.0 from https://dlc.binhua.org/touchp/touchp-linux-amd64-v1.0.0...
+	Downloading touchp-linux-amd64-v1.0.0 from https://touchp.tourcoder.com/touchp-linux-amd64-v1.0.0...
 	Successfully installed touchp to /usr/local/bin/touchp
 	You can now run 'touchp --help' to get started.
 	```
@@ -68,7 +68,7 @@ curl -fsSL https://raw.githubusercontent.com/huabin/touchp/refs/heads/master/ins
 	```
 	Starting touchp installation...
 	Detected system: windows-amd64
-	Downloading touchp-windows-amd64-v1.0.0.exe from https://dlc.binhua.org/touchp/touchp-windows-amd64-v1.0.0.exe...
+	Downloading touchp-windows-amd64-v1.0.0.exe from https://touchp.tourcoder.com/touchp-windows-amd64-v1.0.0.exe...
 	Windows detected. Please manually move touchp-windows-amd64-v1.0.0.exe to a directory in your PATH.
 	File downloaded to: /tmp/touchp-install/touchp-windows-amd64-v1.0.0.exe
 	```
